@@ -7,13 +7,15 @@ const cors = require('cors');
 const app = express();
 
 dotenv.config();
+
 const corsOptions = {
-    origin: 'http://localhost:3000', 
-    methods: 'GET,POST,PUT,DELETE', 
-    allowedHeaders: 'Content-Type,Authorization',
-  };
+  origin: '*',
+  methods: 'GET,POST,PUT,DELETE',
+  allowedHeaders: 'Content-Type,Authorization',
+};
+
   
-  app.use(cors(corsOptions));
+app.use(cors(corsOptions));
   
 
 connectDB();

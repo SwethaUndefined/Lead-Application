@@ -1,9 +1,7 @@
-// controllers/leadController.js
 const Lead = require('../models/Lead');
 
-// Create Lead
+
 exports.createLead = async (req, res) => {
-  console.log(req.body,"req.body")
   try {
     const newLead = new Lead(req.body);
     await newLead.save();
@@ -15,16 +13,6 @@ exports.createLead = async (req, res) => {
 
 exports.getLeads = async (req, res) => {
   try {
-    const { search, sortBy = 'name' } = req.query;
-    // const query = search
-    //   ? {
-    //       $or: [
-    //         { name: new RegExp(search, 'i') },
-    //         { email: new RegExp(search, 'i') },
-    //         { product: new RegExp(search, 'i') },
-    //       ],
-    //     }
-    //   : {};
     const leads = await Lead.find({});
     res.status(200).json(leads);
   } catch (err) {
