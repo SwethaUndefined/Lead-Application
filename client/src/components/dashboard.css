@@ -1,0 +1,46 @@
+
+.header{
+    background-color: #ffffff;
+    height: 65px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerText{
+    font-size: 22px;
+    font-weight: 500;
+    color: #000000;
+}
+.selectSearchCol{
+    margin:20px 20px 20px 0px;
+}
+.ant-row {
+    display: block;
+}
+.table{
+    margin:20px;
+}
+.addlead{
+    margin:20px;
+}
+.lead-btn{
+    background-color: #0A66C2;
+    font-size: 14px;
+    font-weight: 400px;
+    color: #FFFFFF;
+    border: none;
+}
+.lead-btn:hover{
+    background-color: #0A66C2 !important;
+    font-size: 14px;
+    font-weight: 400px;
+    color: #FFFFFF !important;
+    border: none;
+}
+.ant-input-affix-wrapper:not(:last-child) {
+    border-radius: 20px !important;
+}
+.ant-input-search-button {
+    display: none;
+ }

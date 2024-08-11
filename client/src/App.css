@@ -1,0 +1,25 @@
+body {
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ant-layout-header {
+    background: #001529;
+  }
+  
+  .ant-layout-content {
+    background: #fff;
+    padding: 24px;
+    margin: 0;
+    min-height: 280px;
+  }
+  
+  .ant-card {
+    background-color: #fafafa;
+  }
+  
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+  
